@@ -18,9 +18,8 @@ Pensando ampliamente podemos pensar en dos dominios que son:
 
 **(b) procesar imágenes médicas y diagnósticos anonimizados:** STA cuenta con 3 diferentes productos diseñados para servir como datos de entrenamiento de modelos de IA. 
 
-**(c) distribuir imagenes médicas y diagnósticos anonimizados:**  Este posible dominio se centra en la distribución completa de las imagenes a los socios asociados. 
-
-De todas maneras se puede ver una relación muy directa con (b) y (c) donde la distribución al hacerse a traves de los productos diseñados de STA que se encargan de el procesamiento de datos se sienten integrados y de cierta forma bien acoplados. Es así que se toma la decisión de fusionarlos en un dominio nuevo **(bc) procesar y distribuir imágenes médicas y diagnósticos anonimizados:** 
+**(c) distribuir imagenes médicas y diagnósticos anonimizados:**  Este posible dominio se centra en la distribución completa de las imagenes a los socios asociados siguiendo las diferentes suscripciones al sistema. 
+ 
 
 Para constituir cada uno de los dominios se tiene que poner en consideración sus distintos subdominios
 
@@ -29,8 +28,13 @@ Para constituir cada uno de los dominios se tiene que poner en consideración su
   * Recolección de Imágenes Médicas
   * Anonimización de Datos
 
-**Para (bc) procesar y distribuir imágenes médicas y diagnósticos anonimizados:** 
+**Para (b) procesar imágenes médicas y diagnósticos anonimizados:** STA cuenta con 3 diferentes productos diseñados para servir como datos de entrenamiento de modelos de IA:** 
   * Canonización de Imágenes
   * Procesamiento de Imágenes para IA
-  * Presentación de Datos y Diagnósticos
-  * Distribución de Imágenes y Diagnósticos
+
+**Para (c) distribuir imagenes médicas y diagnósticos:**  Este posible dominio se centra en la distribución completa de las imagenes a los socios asociados siguiendo las diferentes suscripciones al sistema:**
+ * Gestión de Suscripciones
+ * Búsqueda y Filtrado de Datos
+ * Descarga de Datos
+ * Acceso a Ambientes Virtuales
+ * Consultoria
