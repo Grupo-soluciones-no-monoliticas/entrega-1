@@ -1,20 +1,69 @@
-/* Syntax example: Domain and Subdomains */
-Domain Insurance {
-  domainVisionStatement = "Insurance domain vision statement ..."
+Domain RecaudacionImagenes {
+  domainVisionStatement = "Recaudar y gestionar imágenes médicas de calidad para su procesamiento y distribución"
 
-  Subdomain CustomerManagementDomain {
+  Subdomain GestionProveedores {
+
+    /* La gestión de proveedores de salud es un subdominio esencial ya que el negocio depende de una red 
+    sólida de proveedores de salud para recibir las imágenes médicas. Este proceso es único para la compañía, 
+    y su éxito depende de las relaciones que STA pueda formar y mantener con estos proveedores*/
     type = CORE_DOMAIN
-    domainVisionStatement = "Subdomain managing everything customer-related."
+    domainVisionStatement = "Gestionar proveedores de imágenes médicas cumpliendo normativas de salud"
 
-    Entity Customer {
-      String firstname
-      String familyname
-    }
 
-    /* Add more entities ... */
   }
 
-  Subdomain ContractManagementDomain {}
+  
+  Subdomain Recoleccion {
 
-  /* Add more subdomains ... */
+    /*Este subdominio está relacionado con la estrategia principal de la compañía que busca recolectar imágenes 
+    médicas de los proveedores de salud. Este proceso de recaudación de datos es lo que necesitan los productos de STA*/
+    type = CORE_DOMAIN
+    domainVisionStatement = "Recolección eficiente de imágenes médicas para su procesamiento posterior"
+  }
+
+  Subdomain Anonimizacion {
+
+    /*La anonimización de los datos médicos es esencial para evitar el manejo de información sensible.*/
+    type = CORE_DOMAIN
+    domainVisionStatement = "Garantizar la anonimización de datos médicos para proteger la privacidad"
+  }
 }
+
+
+Domain ProcesarDistribuir {
+  domainVisionStatement = "Procesar, analizar y distribuir imágenes médicas y diagnósticos anonimizados"
+
+  Subdomain Canonizacion {
+    
+    /* La canonización de las imágenes médicas, es decir, asegurarse de que las imágenes estén en un formato estándar (por ejemplo, DICOM),
+     es una actividad necesaria, pero genérica, ya que cualquier empresa que maneje imágenes médicas en el sector debería tener algún proceso similar. */
+    type = GENERIC_SUBDOMAIN
+    
+    domainVisionStatement = "Normalizar imágenes médicas para su integración y análisis"
+  }
+
+  Subdomain Procesamiento {
+
+    /*l procesamiento de las imágenes médicas para entrenar modelos de IA es una actividad clave que está alineada con la ventaja competitiva de STA*/
+    type = CORE_DOMAIN
+
+    domainVisionStatement = "Procesar imágenes médicas con inteligencia artificial para diagnóstico preciso"
+  }
+
+  Subdomain Presentacion {
+
+    /*La Presentación de Datos y Diagnósticos es clave para que los usuarios finales (investigadores, médicos, etc.) puedan interpretar y utilizar
+     los datos procesados de manera efectiva.*/
+    type = CORE_DOMAIN
+    domainVisionStatement = "Presentar imágenes y diagnósticos de manera clara y accesible"
+  }
+
+  Subdomain Distribucion {
+
+    /*La distribución de imágenes y diagnósticos está directamente relacionada con el modelo de negocio de STA, 
+    ya que es el mecanismo por el cual los datos procesados se entregan a los clientes*/
+    type = CORE_DOMAIN
+    domainVisionStatement = "Distribuir imágenes médicas y diagnósticos de forma segura"
+  }
+}
+
