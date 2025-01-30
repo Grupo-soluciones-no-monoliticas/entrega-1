@@ -28,11 +28,11 @@ Para constituir cada uno de los dominios se tiene que poner en consideración su
   * Recolección de Imágenes Médicas
   * Anonimización de Datos
 
-**Para (b) procesar imágenes médicas y diagnósticos anonimizados:** STA cuenta con 3 diferentes productos diseñados para servir como datos de entrenamiento de modelos de IA:** 
+**Para (b) procesar imágenes médicas y diagnósticos anonimizados:** STA cuenta con 3 diferentes productos diseñados para servir como datos de entrenamiento de modelos de IA:
   * Canonización de Imágenes
   * Procesamiento de Imágenes para IA
 
-**Para (c) distribuir imagenes médicas y diagnósticos:**  Este posible dominio se centra en la distribución completa de las imagenes a los socios asociados siguiendo las diferentes suscripciones al sistema:**
+**Para (c) distribuir imagenes médicas y diagnósticos:**
  * Gestión de Suscripciones
  * Búsqueda y Filtrado de Datos
  * Descarga de Datos
